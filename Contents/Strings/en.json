@@ -1,0 +1,11 @@
+{
+  "email"        : "Email",
+  "password"     : "Password",
+  "maxvideos"    : "Max Num of Video Listings",
+  "cachesec"     : "Video Listings Cache Timeout (seconds)",
+  "show_live"    : "Show Live Channel",
+  "show_feature" : "Show Featured Programs",
+  "show_program" : "Show All Programs",
+  "feature"      : "Featured",
+  "vod"          : "Video on Demand"
+}

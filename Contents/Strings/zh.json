@@ -1,0 +1,11 @@
+{
+  "email"        : "電郵",
+  "password"     : "密碼",
+  "maxvideos"    : "影片列表數目",
+  "cachesec"     : "影片列表暫存時限（秒）",
+  "show_live"    : "顯示直播頻道",
+  "show_feature" : "顯示精選節目列表",
+  "show_program" : "顯示點播節目列表",
+  "feature"      : "精選節目",
+  "vod"          : "點播節目"
+}

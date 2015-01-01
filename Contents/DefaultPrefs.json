@@ -1,0 +1,50 @@
+[
+{
+  "id": "username",
+  "type": "text",
+  "label": "Email",
+},
+{
+  "id": "password",
+  "type": "text",
+  "label": "Password",
+  "option": "hidden",
+  "secure": "true"
+},
+{
+  "id": "maxvideos",
+  "type": "text",
+  "label": "Max Num of Video Listings",
+  "default": "20"
+},
+{
+  "id": "cachesec",
+  "type": "text",
+  "label": "Data Cache Time (seconds)",
+  "default": "900"
+},
+{
+  "id": "show_live",
+  "type": "bool",
+  "label": "Show Live Channel",
+  "default": "true"
+},
+{
+  "id": "show_feature",
+  "type": "bool",
+  "label": "Show Featured VOD Programs",
+  "default": "true"
+},
+{
+  "id": "show_program",
+  "type": "bool",
+  "label": "Show All VOD Programs",
+  "default": "true"
+},
+{
+  "id": "get_plot",
+  "type": "bool",
+  "label": "Get Plot Summary",
+  "default": "false"
+}
+]
