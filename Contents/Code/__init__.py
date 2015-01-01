@@ -465,3 +465,7 @@ def AdTrack(timer, imList, tkList):
     Log('Tracking completed ...')
 
 #
+#   First they ignore you, then they laugh at you,
+#   then they fight you, then you win.
+#                   - Mahatma Gandhi (1869 - 1948)
+#
