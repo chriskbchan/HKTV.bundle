@@ -35,10 +35,13 @@ def Start():
     Log('Start HKTV Plugin')
 
     Dict['UDID'] = str(uuid.uuid1())
+    Logged = False
     if 'uid' in Dict:
-        if Dict['uid'] == '1' or not Dict['uid']:
-            Log('Login HKTV...')
-            Login(Prefs['username'], Prefs['password'])
+        if int(Dict['uid']) > 1:
+            Logged = True
+    if not Logged:
+        Log('Login HKTV...')
+        Login(Prefs['username'], Prefs['password'])
     token = GetToken()
     if token:
         Dict['uid']  = token['user_id']
@@ -290,10 +293,10 @@ def PlayVideo(vid=None, url=None, dur=0, imList=None, tkList=None):
 # API
 
 def Login(username, password):
-    Log('User length: %d' % len(username))
-    Log('Pass length: %d' % len(password))
     payload = { 'j_username' : username, 'j_password' : password  }
     try:
+        Log('User length: %d' % len(username))
+        Log('Pass length: %d' % len(password))
         resp = HTTP.Request(loginURL, values=payload, cacheTime=0.0, timeout=10.0)
         #Log('Login=%s' % resp)
         return True
